@@ -40,7 +40,7 @@ const quizQuestions: QuizQuestion[] = [
     question: 'Qual dupla de riflers ganhou o apelido de “Yuurato”?',
     options: [
       'yuurih + KSCERATO',
-      'arT + HEN1',
+      'KSCERATO + FalleN',
       'KSCERATO + molodoy',
       'yuurih + YEKINDAR'
     ],
@@ -54,13 +54,13 @@ const quizQuestions: QuizQuestion[] = [
   },
   {
     id: 6,
-    question: 'Qual jogadora exerce as funções de AWP na equipe feminina (FURIA fe)?',
+    question: 'Qual jogadora exerce as funções de AWPer na equipe feminina de CS2 (FURIA fe)?',
     options: ['bizinha', 'gabs', 'izaa', 'kaahSENSEI'],
     correctAnswer: 3          
   },
   {
     id: 7,
-    question: 'Quem é conhecido pelo apelido “Professor” e hoje IGL da line masculina?',
+    question: 'Quem é conhecido pelo apelido “Professor” na line masculina de CS2?',
     options: ['KSCERATO', 'FalleN', 'yuurih', 'molodoy'],
     correctAnswer: 1          
   },

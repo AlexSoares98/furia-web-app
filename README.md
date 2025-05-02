@@ -2,7 +2,7 @@
 
 Este projeto é um protótipo de aplicação web para a FURIA Esports, focado no time de CS:GO. Inclui funcionalidades de autenticação, chat bot, quiz e informações sobre o elenco.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - **Autenticação Segura**: Sistema de login e cadastro com Firebase Auth
 - **Chat Bot**: Converse com o bot da FURIA para obter informações sobre jogadores, partidas e mais
@@ -10,7 +10,7 @@ Este projeto é um protótipo de aplicação web para a FURIA Esports, focado no
 - **Elenco**: Explore os jogadores dos times masculino e feminino da FURIA com detalhes e fotos
 - **Lista de Usuários**: Simulação de usuários online com status dinâmicos
 
-## 🔧 Tecnologias Utilizadas
+## Tecnologias 
 
 - **React** + **TypeScript**: Para a interface de usuário
 - **Vite**: Como bundler e ferramenta de desenvolvimento
@@ -20,7 +20,7 @@ Este projeto é um protótipo de aplicação web para a FURIA Esports, focado no
 - **React Router**: Para navegação entre páginas
 - **LocalStorage**: Para armazenamento de dados do ranking
 
-## 🔒 Medidas de Segurança Implementadas
+## Medidas de Segurança 
 
 - **Proteção contra XSS**: Sanitização de entradas do usuário usando DOMPurify
 - **Validação de Formulários**: Validação completa nos formulários de login e cadastro
@@ -28,12 +28,12 @@ Este projeto é um protótipo de aplicação web para a FURIA Esports, focado no
 - **Tratamento de Erros**: Mensagens de erro amigáveis sem expor detalhes técnicos
 - **Limitação de Tamanho**: Limitação no tamanho das mensagens do chat para evitar spam
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 - Node.js (v14+)
 - npm ou yarn
 
-## 🛠️ Instalação e Execução
+## Instalação e Execução
 
 1. Clone o repositório
 ```bash
@@ -55,25 +55,4 @@ npm run dev
 ```
 http://localhost:5173
 ```
-
-## 📱 Responsividade
-
-O aplicativo é totalmente responsivo e se adapta a diferentes tamanhos de tela:
-- **Desktop**: Layout completo com múltiplas colunas
-- **Tablet**: Layout adaptado para telas médias
-- **Mobile**: Layout otimizado para dispositivos móveis
-
-## 🔧 Potenciais Melhorias
-
-- Implementar backend real para persistência de dados
-- Adicionar mais perguntas ao quiz
-- Integrar com API real da FURIA para dados atualizados
-- Adicionar sistema de notificações para partidas
-- Implementar chat entre usuários em tempo real
-
-## 📝 Sobre o Desenvolvimento
-
-Este projeto foi desenvolvido como parte de um processo seletivo para estágio na FURIA Esports, com foco na criação de um protótipo funcional e visualmente atraente, seguindo boas práticas de desenvolvimento e segurança.
-
----
 

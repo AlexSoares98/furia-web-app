@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Regras para usuários
+    match /users/{userId} {
+      // Usuários só podem ler/escrever seus próprios dados
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Regras para chat
+    match /chat/{message} {
+      // Qualquer pessoa autenticada pode ler mensagens
+      allow read: if request.auth != null;
+      // Usuários autenticados podem enviar mensagens, mas devem incluir seu userId
+      allow create: if request.auth != null && 
+                      request.resource.data.userId == request.auth.uid &&
+                      request.resource.data.createdAt == request.time;
+      // Apenas o criador pode editar/excluir suas próprias mensagens
+      allow update, delete: if request.auth != null && 
+                              resource.data.userId == request.auth.uid;
+    }
+
+    // Regras para jogadores (dados públicos)
+    match /jogadores/{document=**} {
+      allow read: if true; // Qualquer um pode ler
+      allow write: if false; // Ninguém pode escrever (apenas via console Firebase)
+    }
+
+    // Regras para partidas (dados públicos)
+    match /partidas/{document=**} {
+      allow read: if true; // Qualquer um pode ler
+      allow write: if false; // Ninguém pode escrever (apenas via console Firebase)
+    }
+
+    // Regras para quiz ranking
+    match /quiz-rankings/{document=**} {
+      allow read: if true; // Qualquer um pode ler o ranking
+      allow create, update: if request.auth != null; // Apenas usuários autenticados podem adicionar scores
+    }
+  }
+}

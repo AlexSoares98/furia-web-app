@@ -4,8 +4,7 @@ import {
   signInWithEmailAndPassword, 
   signOut, 
   updateProfile, 
-  sendPasswordResetEmail,
-  User 
+  sendPasswordResetEmail
 } from 'firebase/auth';
 import { auth } from '../firebase/config';
 

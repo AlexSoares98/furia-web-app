@@ -32,10 +32,10 @@ const ChatBot = () => {
   ];
 
   const jogadoresFemininos = [
-    { nome: 'Bruna "bizinha" Marvila', funcao: 'AWP / IGL', info: 'Nossa capitã! AWPer e IGL do time feminino.' },
+    { nome: 'Bruna "bizinha" Marvila', funcao: 'AWP / IGL', info: 'Nossa capitã! IGL do time feminino.' },
     { nome: 'Gabriela "gabs" Freindorfer', funcao: 'Rifle (support)', info: 'Jogadora experiente, dando suporte ao time.' },
     { nome: 'Izabella "izaa" Galle', funcao: 'Entry fragger', info: 'Entry fragger explosiva, abre espaços para a equipe.' },
-    { nome: 'Karina "kaahSENSEI" Takahashi', funcao: 'Rifle', info: 'Rifler talentosa e precisa.' },
+    { nome: 'Karina "kaahSENSEI" Takahashi', funcao: 'AWP', info: 'AWPer talentosa e precisa.' },
     { nome: 'Lucia "lulitenz" Dubra', funcao: 'Rifle / lurker', info: 'Especialista em lurk e situações clutch.' },
   ];
 
@@ -55,7 +55,7 @@ const ChatBot = () => {
     const lowerCaseMessage = userMessage.toLowerCase();
 
     if (lowerCaseMessage.includes('jogadores')) {
-      return 'Temos times incríveis! 🔥 Quer saber sobre qual time? Digite "masculino" ou "feminino" que eu te conto tudo! 😊';
+      return 'Temos times incríveis! 🔥 Quer saber sobre qual time? Digite "masculino" ou "feminino" que eu te conto tudo!';
     }
 
     if (lowerCaseMessage.includes('masculino')) {
@@ -75,7 +75,7 @@ const ChatBot = () => {
     }
 
     if (lowerCaseMessage.includes('curiosidades') || lowerCaseMessage.includes('história') || lowerCaseMessage.includes('desde quando')) {
-      return '🐆 A FURIA foi fundada em 2017! Nossa pantera representa força, agilidade e determinação. Já fizemos história no CS mundial! 💪';
+      return 'Fundada em 2017 pelos sócios Jaime Pádua, André Akkari e Cris Guedes, a FURIA nasceu com a proposta de viver esports 24h por dia. Em 2020 conquistamos nosso primeiro título internacional (ESL Pro League S12 NA) e, em 2022, fizemos história chegando à semifinal do IEM Rio Major, no Brasil.';
     }
 
     if (lowerCaseMessage.includes('títulos') || lowerCaseMessage.includes('campeonatos')) {
@@ -87,7 +87,7 @@ const ChatBot = () => {
     }
 
     if (lowerCaseMessage.includes('highlights') || lowerCaseMessage.includes('vídeos')) {
-      return '🎥 Quer ver jogadas épicas? Confira nossa playlist oficial no YouTube: https://www.youtube.com/@FURIAgg';
+      return '🎥 Quer ver jogadas épicas e notícias? Fique de olho em nosso instagram: https://www.instagram.com/furiagg/';
     }
 
     if (lowerCaseMessage.includes('quiz')) {

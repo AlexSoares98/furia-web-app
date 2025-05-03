@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import { motion } from 'framer-motion';
-import { FaTwitter, FaInstagram, FaTwitch } from 'react-icons/fa';
+import { FaInstagram, FaTwitch } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 import fallenImage from '../assets/images/FalleN-furia.webp';
 import yuurihImage from '../assets/images/yuurih-furia.webp';
@@ -266,7 +267,7 @@ const Elenco = () => {
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-blue-400 transition-colors"
                       >
-                        <FaTwitter />
+                        <FaXTwitter />
                       </a>
                     )}
                     {jogador.socialMedia.instagram && (

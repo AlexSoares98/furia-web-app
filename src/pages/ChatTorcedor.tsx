@@ -15,7 +15,7 @@ const ChatTorcedor = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: 'Bem-vindo ao Chat do Torcedor! Converse com outros torcedores da FURIA!',
+      text: 'Bem-vindo ao Chat do Torcedor! Converse com outros torcedores da FURIA! ',
       sender: 'sistema',
       timestamp: new Date()
     }

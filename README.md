@@ -1,6 +1,6 @@
 # FURIA Web App - Prototipo
 
-Este projeto é um protótipo de aplicação web para a FURIA Esports, focado no time de CS:GO. Inclui funcionalidades de autenticação, chat bot, quiz e informações sobre o elenco.
+Este projeto é um protótipo de aplicação web para a FURIA Esports, focado no time de CS. Inclui funcionalidades de autenticação, chat bot, quiz e informações sobre os times.
 
 ## Funcionalidades
 
